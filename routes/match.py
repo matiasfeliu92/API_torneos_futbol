@@ -19,7 +19,7 @@ matchs_data_collection = mongo_conn["matchs_data"]
 
 
 @match.get("/links/all", tags=['matchs'])
-async def get_links(page: int = Query(1, gt=0), per_page: int = Query(60, gt=0)):
+async def get_all_links(page: int = Query(1, gt=0), per_page: int = Query(60, gt=0)):
     try:
         skip = (page - 1) * per_page
         limit = per_page
