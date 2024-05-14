@@ -1,6 +1,5 @@
 from fastapi import FastAPI,HTTPException
 from fastapi.responses import JSONResponse
-from sqlalchemy import text as sql_text
 import pandas as pd
 import sys
 import os

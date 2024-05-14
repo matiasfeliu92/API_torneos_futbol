@@ -2,7 +2,6 @@ import json
 import uuid
 from fastapi import APIRouter, Query
 from fastapi.responses import JSONResponse
-from sqlalchemy import text as sql_text
 
 from helpers.utils import get_match_data, get_matchs_links
 from models.match_data import MatchData
