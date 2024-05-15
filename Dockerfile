@@ -1,8 +1,8 @@
 # Utilizamos una imagen base de Python
 FROM python:3.9
 
-# Establecemos el directorio de trabajo en /app
-WORKDIR /app
+# Establecemos el directorio de trabajo en /
+WORKDIR /
 
 # Copiamos el archivo de requisitos al contenedor
 COPY requirements.txt .
