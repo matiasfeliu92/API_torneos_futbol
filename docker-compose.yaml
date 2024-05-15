@@ -5,8 +5,8 @@ services:
     build: .
     ports:
       - "8000:8000"
-    environment:
-      - MONGO_URI=mongodb://mongo:27017/etL_practise
+    env_file:
+      - .env
     depends_on:
       - mongo
 
