@@ -9,6 +9,8 @@ services:
       - .env
     depends_on:
       - mongo
+    volumes:
+      - ./:
 
   mongo:
     image: mongo
